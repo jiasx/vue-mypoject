@@ -1,23 +1,41 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<template id="app">
+    <el-container class="con_main">
+      <el-header style="padding:0px;">
+        <v-header></v-header>
+      </el-header>
+      <el-container>
+        <el-main  style="padding:0px;">
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
 </template>
 
 <script>
+import $ from 'jquery'
+import VHeader from "./components/header"
+import VLeft from "./components/left";
 export default {
-  name: 'App'
-}
-</script>
+  name: 'App',
+  data(){
+    return{
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    }
+  },
+  created(){
+
+  },
+  components:{
+    VHeader,
+    VLeft
+   
+  }  
 }
+
+</script>
+<style lang="less">
+  @import "style/common.less";
 </style>
+
+
+
