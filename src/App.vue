@@ -1,5 +1,6 @@
-<template id="app">
-    <el-container class="con_main">
+<template>
+	<div id="app">
+   <el-container class="con_main">
       <el-header style="padding:0px;">
         <v-header></v-header>
       </el-header>
@@ -9,12 +10,14 @@
         </el-main>
       </el-container>
     </el-container>
+	</div>
 </template>
 
 <script>
-import $ from 'jquery'
-import VHeader from "./components/header"
+// import api from "./fetch/api"
+import VHeader from "./components/header";
 import VLeft from "./components/left";
+
 export default {
   name: 'App',
   data(){
