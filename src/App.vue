@@ -12,6 +12,10 @@ export default {
 
 <style>
 /********重置**********/
+#app {
+  
+}
+/* 公共样式 */
 html,body{-webkit-tap-highlight-color:rgba(0,0,0,0);color:#696969;font:12px "微软雅黑",Helvetica;margin:0;padding:0;width:100%;height:100%;}
 form,table,td,h1,h2,h3,h4,ul,ol,li,p{margin:0;padding:0;border:0;list-style:none}
 input,img{vertical-align:middle}
