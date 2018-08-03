@@ -35,8 +35,8 @@
   </div>
 </template>
 
-
 <style lang="less">
 @import "./../style/reset.less";
 @import "./../style/login.less";
 </style>
+
